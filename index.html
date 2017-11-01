@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body ng-controller="main">
+    {{greet}} world {{test}}
+    <input type="text" placeholder="enter a number to double" ng-model="theNumber">
+    <button ng-click="testfactory(theNumber)">DoubleIt!</button>
+    <p>Result: {{theResult}}</p>
+    <test-dir></test-dir>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+    <script src='app.js'></script>
+    <script src='main.js'></script>
+    <script src='testFactory.js'></script>
+    <script src='testDirective.js'></script>
+</body>
+
+</html>
